@@ -1,18 +1,18 @@
 function game() {
 
-    let options = ["R", "P", "S"];
+    let options = ["r", "p", "s"];
     let wins = 0, loses = 0, ties = 0;
     while (true) {
-        let choice = prompt ("Please make your choice");
+        let choice = prompt ("Please make your choice! (r) (p) or (s)");
         let randomChoice = options[Math.floor(Math.random() * options.length)];
         alert("The computer chose: " + randomChoice);
-        if (((choice === "R") && (randomChoice === "R")) || ((choice === "P") && (randomChoice === "P")) || ((choice === "S") && (randomChoice === "S"))) {
+        if (((choice === "r") && (randomChoice === "r")) || ((choice === "p") && (randomChoice === "P")) || ((choice === "s") && (randomChoice === "s"))) {
             alert("Tie");
             ties += 1;
-        } else if (((choice === "R") && (randomChoice === "P")) || ((choice === "P") && (randomChoice === "S")) || ((choice === "S") && (randomChoice === "R"))) {
+        } else if (((choice === "r") && (randomChoice === "p")) || ((choice === "p") && (randomChoice === "s")) || ((choice === "s") && (randomChoice === "R"))) {
             alert("Lose");
             loses += 1;
-        } else if (((choice === "R") && (randomChoice === "S")) || ((choice === "P") && (randomChoice === "R")) || ((choice === "S") && (randomChoice === "P"))) {
+        } else if (((choice === "r") && (randomChoice === "s")) || ((choice === "p") && (randomChoice === "r")) || ((choice === "s") && (randomChoice === "p"))) {
             alert("Win");
             wins += 1;
         }
