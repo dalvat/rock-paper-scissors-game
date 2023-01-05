@@ -3,9 +3,6 @@ function game() {
     let options = ["R", "P", "S"];
     let wins = 0, loses = 0, ties = 0;
     while (true) {
-        if (i === 10) {
-            break;
-        }
         let choice = prompt ("Please make your choice");
         let randomChoice = options[Math.floor(Math.random() * options.length)];
         alert("The computer chose: " + randomChoice);
