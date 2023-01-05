@@ -2,7 +2,7 @@ function game() {
 
     let options = ["R", "P", "S"];
     let wins = 0, loses = 0, ties = 0;
-    for (let i = 0; i < 10; i++) {
+    while (true) {
         if (i === 10) {
             break;
         }
@@ -19,8 +19,8 @@ function game() {
             alert("Win");
             wins += 1;
         }
+        alert("Ties: " + ties + " Wins: " + wins + " Loses: " + loses);
     }
-    alert("Ties: " + ties + " Wins: " + wins + " Loses: " + loses);
 }
 
 game();
